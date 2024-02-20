@@ -109,6 +109,6 @@ public class ReadInput {
         ri.readGoogle("input/example.in");
         System.out.println(ri.data.get("video_ed_request"));
         System.out.println(ri.toString());
-        //gh.fitness();
+        //ri.fitness();
     }
 }
