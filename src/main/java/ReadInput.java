@@ -16,9 +16,7 @@ public class ReadInput {
     }
 
     public void readGoogle(String filename) throws IOException {
-        
-        // Map<String, Object> data = new HashMap<String, Object>();
-     
+             
         BufferedReader fin = new BufferedReader(new FileReader(filename));
     
         String system_desc = fin.readLine();
@@ -103,15 +101,13 @@ public class ReadInput {
             }
         }
 
-        //result += 
-
         return result;
     }
 
     public static void main(String[] args) throws IOException {  
         ReadInput ri = new ReadInput();
         ri.readGoogle("input/example.in");
-        // System.out.println(ri.data.get("video_ed_request"));
+        System.out.println(ri.data.get("video_ed_request"));
         System.out.println(ri.toString());
         //gh.fitness();
     }
